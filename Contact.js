@@ -19,6 +19,7 @@ class Contact extends React.Component {
     }
 
     render() {
+        // toggle btn login page and contactInfo 
         const login = (
             <form action='#' onSubmit={this.authorize}>
                 <input type='password' and placeholder='Password' />
