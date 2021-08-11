@@ -1,6 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
+'use strict'
 class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -13,16 +11,16 @@ class Contact extends React.Component {
 
     authorize(e) {
         const password = e.target.querySelector(
-        'input[type="password"]').value,
-        auth = password == this.state.password;
+        'input[type="password"]').value;
+        const auth = password == this.state.password;
         this.setState({
-        authorized: auth
+            authorized: auth
         });
     }
 
     render() {
         return (
-            <div id="authorization">
+            <div id='authorization'>
                 <h1>Contact</h1>
                 <ul>
                     <li>
